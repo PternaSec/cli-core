@@ -1,0 +1,42 @@
+{
+  "name": "pternasec-cli",
+  "version": "1.0.0",
+  "description": "CLI oficial del Framework PternaSec para OSINT y Seguridad Ofensiva",
+  "main": "dist/src/menu.js",
+  "bin": {
+    "pternasec": "dist/bin/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx bin/index.ts",
+    "start": "node dist/bin/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PternaSec/cli-core.git"
+  },
+  "keywords": [
+    "osint",
+    "security",
+    "pentesting",
+    "pternasec",
+    "cli"
+  ],
+  "author": "Luval & PternaSec Team",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@clack/prompts": "^1.7.0",
+    "commander": "^15.0.0",
+    "figlet": "^1.11.0",
+    "node-fetch": "^3.3.2",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^26.1.0",
+    "tsx": "^4.23.0",
+    "typescript": "^6.0.3"
+  }
+}

@@ -1,0 +1,17 @@
+# Ignore source code (NPM solo necesita el código compilado en /dist)
+src/
+tsconfig.json
+.npmrc
+.eslintrc*
+.prettierrc*
+
+# Ignore test files or logs
+test/
+*.log
+
+# Ignore local config
+.env
+
+# Keep dist/ and bin/
+!dist/
+!bin/
