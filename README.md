@@ -30,6 +30,18 @@ La manera más recomendada de usar PternaSec CLI es instalándolo de forma globa
 npm install -g pternasec-cli
 ```
 
+### Instalación vía Docker (Containerizado)
+
+Si prefieres mantener tu sistema completamente limpio sin instalar Node.js ni NPM, puedes ejecutar el CLI directamente desde su contenedor oficial de GitHub. 
+
+Para ejecutarlo interactivamente y enlazar una carpeta de tu máquina (para que los scripts que descargues se guarden en tu disco duro real):
+
+```bash
+docker run -it --rm \
+  -v ~/.pternasec/scripts:/root/.pternasec/scripts \
+  ghcr.io/pternasec/cli-core:latest
+```
+
 ### Instalación para Desarrollo Local
 
 Si deseas contribuir al código fuente del CLI o probar la última versión de desarrollo:

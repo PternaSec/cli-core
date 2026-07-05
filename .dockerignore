@@ -1,0 +1,22 @@
+# Ignorar módulos de node locales
+node_modules/
+
+# Ignorar archivos compilados locales
+dist/
+out/
+build/
+
+# Ignorar archivos de logs
+*.log
+npm-debug.log*
+
+# Ignorar variables de entorno
+.env
+
+# Ignorar archivos de git
+.git/
+.gitignore
+
+# Ignorar archivos de IDE
+.idea/
+.vscode/
